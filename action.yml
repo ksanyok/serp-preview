@@ -1,0 +1,16 @@
+name: "SERP Preview by PromoPilot"
+description: "Check that page titles and meta descriptions fit in Google search results."
+author: "Alexandr Krikun"
+branding:
+  icon: "search"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the serp-preview CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run serp-preview
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}

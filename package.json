@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/serp-preview",
+  "version": "1.0.0",
+  "description": "Preview Google search snippets from the command line: measures titles and meta descriptions in pixels with Arial metrics, shows the truncation point for desktop and mobile, and flags missing, generic or cut-off snippets. Works on live URLs or plain text, with an HTML preview export. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "serp",
+    "serp-preview",
+    "google-snippet",
+    "title-tag",
+    "meta-description",
+    "seo",
+    "seo-tools",
+    "pixel-width",
+    "content-marketing",
+    "copywriting",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/serp-preview.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=serp-preview",
+  "bugs": {
+    "url": "https://github.com/ksanyok/serp-preview/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/serp-preview.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "serp-preview": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
