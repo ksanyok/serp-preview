@@ -18,7 +18,7 @@ Options:
   --strict              Exit with code 1 on warnings too
   -h, --help            Show this help
 
-Online version (no install): https://promopilot.link/en/tools/serp-preview.php
+Online version (no install): https://promopilot.link/en/tools/serp-preview.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=serp-preview
 `;
 
 const args = process.argv.slice(2);
